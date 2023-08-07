@@ -104,7 +104,7 @@ function basicmap() {
 
         // Let's also add a marker while we're at it
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(23.694182, 90.457313),
+            position: new google.maps.LatLng(18.240438, -72.539291),
             map: map,
             title: 'Cryptox'
         });
