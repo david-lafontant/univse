@@ -1,0 +1,102 @@
+<header id="header-part">
+       
+<div class="header-top d-none d-md-block">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="header-contact text-lg-left text-center">
+                    <ul>
+                        <li><%= image_tag("all-icon/call.png", alt: "icon") %><span>+(509) 8888-8888</span></li>
+                        <li><%= image_tag("all-icon/email.png", alt: "icon") %><span>info@univse.edu</span></li>
+                        <li><%= image_tag("all-icon/map.png", alt: "icon") %><span>127/5 Jacmel, Haiti</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="header-social text-lg-right text-center">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div> <!-- header top -->
+
+<div class="navigation navigation-2">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-11 col-md-10 col-sm-9 col-9">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index-3.html">
+                        <%= image_tag("logo.png", alt: "Logo") %>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <%= link_to "UNIVSE", root_path,  class:"active" %>
+
+                            </li>
+                            <li class="nav-item">
+                                <%= link_to "Presentation" , pages_about_path %>
+                            </li>
+                            <li class="nav-item">
+                                <%= link_to "Formations" , pages_courses_path %>
+
+                            </li>
+                            <li class="nav-item">
+                                <%= link_to "Evenements", pages_events_path %>
+
+                            </li>
+                            <li class="nav-item">
+                                <%= link_to "Dashboard", pages_dasboard_path %>
+                            </li>
+
+ 
+                            <li class="nav-item">
+                                <%= link_to "Contact", pages_contact_path %>
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav> <!-- nav -->
+            </div>
+            <div class="col-lg-1 col-md-2 col-sm-3 col-3">
+                <div class="right-icon text-right">
+                    <ul>
+                        <li><a href="#" id="search"><i class="bi bi-search"></i></a></li>
+                        <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+                    </ul>
+                </div> <!-- right icon -->
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div>
+
+</header>
+
+<!--====== HEADER PART ENDS ======-->
+
+<!--====== SEARCH BOX PART START ======-->
+
+<div class="search-box">
+<div class="serach-form">
+    <div class="closebtn">
+        <span></span>
+        <span></span>
+    </div>
+    <form action="#">
+        <input type="text" placeholder="Search by keyword">
+        <button><i class="fa fa-search"></i></button>
+    </form>
+</div> <!-- serach form -->
+</div>

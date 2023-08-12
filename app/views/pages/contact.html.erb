@@ -1,0 +1,117 @@
+<section id="page-banner" class="pt-105 pb-130 bg_cover" data-overlay="8" style="background-image:url(<%= image_url('page-banner-6.jpg')%>)" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-banner-cont">
+                        <h2>Contact</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/"><i class="bi bi-house-fill"></i></a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                            </ol>
+                        </nav>
+                    </div>  <!-- page banner cont -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+   
+    <section id="contact-page" class="pt-90 pb-120 gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="contact-from mt-30">
+                        <div class="section-title">
+                            <h5>Contactez nous</h5>
+                            <h2>Laisser nous un message</h2>
+                        </div> <!-- section title -->
+                        <div class="main-form pt-45">
+                            <form id="contact-form" action="#" method="post" data-bs-toggle="validator">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="name" type="text" placeholder="Nom complet" data-bs-error="Veuillez entrer votre nom." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="email" type="email" placeholder="Email" data-bs-error="Veuillez entrer votre courriel." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="subject" type="text" placeholder="Objet" data-bs-error="Objet est obligatoire." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form --> 
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="phone" type="text" placeholder="Phone" data-bs-error="Votre numero de telephone est obligatoire." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="singel-form form-group">
+                                            <textarea name="messege" placeholder="Message" data-bs-error="Veuillez entrer votre message." required="required"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <p class="form-message"></p>
+                                    <div class="col-md-12">
+                                        <div class="singel-form">
+                                            <button type="submit" class="main-btn">Envoyez</button>
+                                        </div> <!-- singel form -->
+                                    </div> 
+                                </div> <!-- row -->
+                            </form>
+                        </div> <!-- main form -->
+                    </div> <!--  contact from -->
+                </div>
+                <div class="col-lg-5">
+                    <div class="contact-address mt-30">
+                        <ul>
+                            <li>
+                                <div class="singel-address">
+                                    <div class="icon">
+                                        <i class="bi bi-house-fill"></i>
+                                    </div>
+                                    <div class="cont">
+                                        <p>27, Avenue Baranquilla, Jacmel</p>
+                                    </div>
+                                </div> <!-- singel address -->
+                            </li>
+                            <li>
+                                <div class="singel-address">
+                                    <div class="icon">
+                                        <i class="bi bi-telephone"></i>
+                                    </div>
+                                    <div class="cont">
+                                        <p>+(509) 8888-8888</p>
+                                        <p>+(509) 8888-8888</p>
+                                    </div>
+                                </div> <!-- singel address -->
+                            </li>
+                            <li>
+                                <div class="singel-address">
+                                    <div class="icon">
+                                        <i class="bi bi-envelope-at-fill"></i>
+                                    </div>
+                                    <div class="cont">
+                                        <p>info@univse.edu</p>
+                                        <p>admission@univse.edu</p>
+                                    </div>
+                                </div> <!-- singel address -->
+                            </li>
+                        </ul>
+                    </div> <!-- contact address -->
+                    <div class="map mt-30">
+                        <div id="contact-map"></div>
+                    </div> <!-- map -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
