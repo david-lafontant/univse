@@ -1,22 +1,15 @@
 class PagesController < ApplicationController
-  def home
-  end
+  def home; end
 
-  def about
-  end
+  def about; end
 
-  def courses
-  end
+  def courses; end
 
-  def events
-  end
+  def events; end
 
-  def dasboard
-  end
+  def dasboard; end
 
-  def contact
-  end
+  def contact; end
 
-  def teachers
-  end
+  def teachers; end
 end
