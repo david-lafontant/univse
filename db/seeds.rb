@@ -9,3 +9,12 @@ User.create! do |u|
   u.email     = 'test@test.com'
   u.password    = 'password'
 end
+
+User.create! do |u|
+  u.email = 'test_admin@test.com'
+  u.password = 'password'
+  u.superadmin_role = true
+  u.supervisor_role = false
+  u.user_role = false
+end
+
