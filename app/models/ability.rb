@@ -28,5 +28,17 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/blob/develop/docs/define_check_abilities.md
+    user ||= User.new # guest user (not logged in)
+    can :manage, :all # <---------- TO GIVE TEMPORARY ACCESS TO EVERYTH
+    if user.superadmin_role?
+      can :manage, :all
+      can :access, :rails_admin
+      # only allow admin users to ac
+      can :manage, :dashboard
+      # allow access to dashboard
+    end
+    if user.supervisor_role?
+      can :manage, User
+    end
   end
 end
