@@ -83,3 +83,4 @@ gem 'rubocop'
 gem 'devise'
 gem 'rails_admin', '~> 3.1', '>= 3.1.2'
 gem 'cancancan'
+gem "sassc-rails"
