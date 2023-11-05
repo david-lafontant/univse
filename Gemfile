@@ -79,8 +79,8 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'rubocop'
+gem 'cancancan'
 gem 'devise'
 gem 'rails_admin', '~> 3.1', '>= 3.1.2'
-gem 'cancancan'
-gem "sassc-rails"
+gem 'rubocop'
+gem 'sassc-rails'

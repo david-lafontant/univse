@@ -18,3 +18,11 @@ User.create! do |u|
   u.user_role = false
 end
 
+User.create! do |u|
+  u.email = 'test_supervisor@test.com'
+  u.password = 'password'
+  u.superadmin_role = false
+  u.supervisor_role = true
+  u.user_role = false
+end
+
