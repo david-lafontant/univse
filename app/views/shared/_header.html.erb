@@ -53,10 +53,12 @@
                                 <%= link_to "Formations" , pages_courses_path %>
 
                             </li>
+                            <% if user_signed_in? %>
                             <li class="nav-item">
                                 <%= link_to "Evenements", pages_events_path %>
 
                             </li>
+                            <% end %>
                             <li class="nav-item">
                                 <%= link_to "Dashboard", pages_dasboard_path %>
                             </li>
@@ -74,8 +76,24 @@
                 <div class="right-icon text-right">
                     <ul>
                         <li><a href="#" id="search"><i class="bi bi-search"></i></a></li>
-                        <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+                        <li class="dropdown" ><i class="bi bi-person-circle"></i>
+  <div class="dropdown-options">
+<% if user_signed_in? %>
+
+  <%= link_to('Edit registration', edit_user_registration_path) %>
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-default btn-sm" %>        
+
+<% else %>
+
+  <%= link_to('Register', new_user_registration_path)  %>
+  <%= link_to('Login', new_user_session_path)  %>  
+
+<% end %>
+  </div>
+                        </li>
+
                     </ul>
+
                 </div> <!-- right icon -->
             </div>
         </div> <!-- row -->

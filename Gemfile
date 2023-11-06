@@ -6,6 +6,8 @@ ruby '3.2.2'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.6'
 
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
@@ -79,4 +81,8 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'cancancan'
+gem 'devise'
+gem 'rails_admin', '~> 3.1', '>= 3.1.2'
 gem 'rubocop'
+gem 'sassc-rails'
